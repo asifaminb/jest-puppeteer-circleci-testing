@@ -22,7 +22,6 @@ describe('jest-image-snapshot usage with an image received from puppeteer', () =
   beforeAll(async () => {
     browser = await puppeteer.launch({
       executablePath: './node_modules/chromium/lib/chromium/chrome-linux/chrome',
-      args: ['--proxy-server=167.123.1.2:8008'],
     });
   });
 
