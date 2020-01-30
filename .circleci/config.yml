@@ -26,7 +26,7 @@ jobs:
           name: Run Tests
           command: |
             mkdir -p ./test-results/junit
-            yarn test
+            yarn test -u
 
       - store_artifacts:
           path: ./test-results/junit
