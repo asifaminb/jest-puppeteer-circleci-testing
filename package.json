@@ -6,7 +6,7 @@
     "test": "jest"
   },
   "keywords": [
-    "jest-image-snapshot",
+    "jest-image-snapdshot",
     "examples"
   ],
   "repository": {
