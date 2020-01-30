@@ -19,15 +19,13 @@
     "jest": "*",
     "jest-image-snapshot": "*",
     "chromium": "^2.1.1",
-    "puppeteer-core": "*"
+    "puppeteer-core": "*",
+    "jest-junit": "^10.0.0"
   },
   "jest": {
     "setupFilesAfterEnv": [
       "<rootDir>/jest-setup.js"
     ]
-  },
-  "devDependencies": {
-    "jest-junit": "^10.0.0"
   },
   "jest-junit": {
     "suiteName": "SWE tests",
