@@ -15,6 +15,7 @@
 // eslint is looking for `puppeteer` at root level package.json
 // eslint-disable-next-line import/no-unresolved
 const puppeteer = require('puppeteer-core');
+const { toMatchImageSnapshot } = require('jest-image-snapshot');
 
 describe('jest-image-snapshot usage with an image received from puppeteer', () => {
   let browser;
@@ -22,7 +23,7 @@ describe('jest-image-snapshot usage with an image received from puppeteer', () =
   beforeAll(async () => {
     browser = await puppeteer.launch({
       executablePath: './node_modules/chromium/lib/chromium/chrome-linux/chrome',
-    });
+    });  const { toMatchImageSnapshot } = require('jest-image-snapshot');
   });
 
   it('works', async () => {
