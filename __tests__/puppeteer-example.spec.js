@@ -31,7 +31,7 @@ describe('jest-image-snapshot usage with an image received from puppeteer', () =
     const image = await page.screenshot();
 
     expect(image).toMatchImageSnapshot();
-  }, 30000);
+  });
 
   afterAll(async () => {
     await browser.close();
